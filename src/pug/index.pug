@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Modern Business - Start Bootstrap Template
+        title haskayısı
 
         // Favicon
         link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
@@ -23,21 +23,25 @@ html(lang='en')
             include includes/navbar.pug
 
             // Header
-            header.bg-dark.py-5
+            header.bg-dark.py-5.custom-header
                 .container.px-5
                     .row.gx-5.align-items-center.justify-content-center
                         .col-lg-8.col-xl-7.col-xxl-6
                             .my-5.text-center.text-xl-start
-                                h1.display-5.fw-bolder.text-white.mb-2 A Bootstrap 5 template for modern businesses
-                                p.lead.fw-normal.text-white-50.mb-4 Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit! 
+                                //h1.display-5.fw-bolder.text-white.mb-2 %100 Malatya'dan 1. Kalite Yeni Mahsül Doğal Jumbo Gün Kurusu Kayısı
+                                h1.display-5.fw-bolder.text-white.mb-2 %100 Malatya'dan
+                                .row
+                                    .col
+                                        h1.display-5.fw-bolder.text-white.mb-2 1. Kalite Yeni Mahsül Doğal Jumbo Gün Kurusu Kayısı
+                                p.lead.fw-normal.text-white-50.mb-4 Güneşte doğal yöntemlerle kurutulan gün kurusu kayısılarımız, diğer kurutulmuş kayısılara göre daha zengin ve yoğun bir tada sahiptir.
                                 .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xl-start
-                                    a.btn.btn-primary.btn-lg.px-4.me-sm-3(href='#features') Get Started
-                                    a.btn.btn-outline-light.btn-lg.px-4(href='#!') Learn More
+                                    // a.btn.btn-outline-light.btn-lg.px-4(href='#features') Get Started
+                                    // a.btn.btn-outline-light.btn-lg.px-4(href='#!') Learn More
                         .col-xl-5.col-xxl-6.d-none.d-xl-block.text-center
-                            img.img-fluid.rounded-3.my-5(src='https://dummyimage.com/600x400/343a40/6c757d', alt='...')
+                            img.img-fluid.rounded-3.my-5(src='assets/bahcem.png', alt='Bahcem Image')
 
             // Features section
-            section#features.py-5
+            // section#features.py-5
                 .container.px-5.my-5
                     .row.gx-5
                         .col-lg-4.mb-5.mb-lg-0
@@ -70,7 +74,7 @@ html(lang='en')
                                         | Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.
 
             // Testimonial section
-            .py-5.bg-light
+            // .py-5.bg-light
                 .container.px-5.my-5
                     .row.gx-5.justify-content-center
                         .col-lg-10.col-xl-7
@@ -86,7 +90,7 @@ html(lang='en')
             // Blog preview section
             section.py-5
                 .container.px-5.my-5
-                    .row.gx-5.justify-content-center
+                    // .row.gx-5.justify-content-center
                         .col-lg-8.col-xl-6
                             .text-center
                                 h2.fw-bolder From our blog
@@ -94,14 +98,15 @@ html(lang='en')
                     .row.gx-5
                         .col-lg-4.mb-5
                             .card.h-100.shadow.border-0
-                                img.card-img-top(src='https://dummyimage.com/600x350/ced4da/6c757d', alt='...')
+                                a(href='https://www.trendyol.com/pd/bsl-store/100-malatya-dan-1-kalite-yeni-mahsul-dogal-jumbo-gun-kurusu-kayisi-500gr-p-859884796')
+                                img.card-img-top.custom-size(src='assets/kaysi.png', alt='...')
                                 .card-body.p-4
-                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
-                                    a.text-decoration-none.link-dark.stretched-link(href='#!')
-                                        h5.card-title.mb-3 Blog post title
+                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 Yeni Sezon
+                                    a.text-decoration-none.link-dark.stretched-link(href='https://www.trendyol.com/pd/bsl-store/100-malatya-dan-1-kalite-yeni-mahsul-dogal-jumbo-gun-kurusu-kayisi-500gr-p-859884796')
+                                        h5.card-title.mb-3 500gr Gün Kurusu Kayısı
                                     p.card-text.mb-0
-                                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                        | %100 Malatya'dan 1. Kalite Yeni Mahsül Doğal Jumbo Gün Kurusu Kayısı
+                                // .card-footer.p-4.pt-0.bg-transparent.border-top-0
                                     .d-flex.align-items-end.justify-content-between
                                         .d-flex.align-items-center
                                             img.rounded-circle.me-3(src='https://dummyimage.com/40x40/ced4da/6c757d', alt='...')
@@ -110,14 +115,14 @@ html(lang='en')
                                                 .text-muted March 12, 2023 &middot; 6 min read
                         .col-lg-4.mb-5
                             .card.h-100.shadow.border-0
-                                img.card-img-top(src='https://dummyimage.com/600x350/adb5bd/495057', alt='...')
+                                img.card-img-top.custom-size(src='assets/kaysi.png', alt='...')
                                 .card-body.p-4
-                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 Media
-                                    a.text-decoration-none.link-dark.stretched-link(href='#!')
-                                        h5.card-title.mb-3 Another blog post title
+                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 Yeni Sezon
+                                    a.text-decoration-none.link-dark.stretched-link(href='https://www.trendyol.com/bsl-store/100-malatya-dan-1-kalite-yeni-mahsul-dogal-jumbo-gun-kurusu-kayisi-1kg-p-859883925?boutiqueId=61&merchantId=642011&filterOverPriceListings=false&sav=true')
+                                        h5.card-title.mb-3 1KG Gün Kurusu Kayısı
                                     p.card-text.mb-0
-                                        | This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.
-                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                        | %100 Malatya'dan 1. Kalite Yeni Mahsül Doğal Jumbo Gün Kurusu Kayısı
+                                // .card-footer.p-4.pt-0.bg-transparent.border-top-0
                                     .d-flex.align-items-end.justify-content-between
                                         .d-flex.align-items-center
                                             img.rounded-circle.me-3(src='https://dummyimage.com/40x40/ced4da/6c757d', alt='...')
@@ -126,14 +131,14 @@ html(lang='en')
                                                 .text-muted March 23, 2023 &middot; 4 min read
                         .col-lg-4.mb-5
                             .card.h-100.shadow.border-0
-                                img.card-img-top(src='https://dummyimage.com/600x350/6c757d/343a40', alt='...')
+                                img.card-img-top.custom-size(src='assets/kaysi.png', alt='...')
                                 .card-body.p-4
-                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
-                                    a.text-decoration-none.link-dark.stretched-link(href='#!')
-                                        h5.card-title.mb-3 The last blog post title is a little bit longer than the others
+                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 Yeni Sezon
+                                    a.text-decoration-none.link-dark.stretched-link(href='https://www.trendyol.com/bsl-store/100-malatya-dan-1-kalite-yeni-mahsul-dogal-jumbo-gun-kurusu-kayisi-3kg-p-858887418?boutiqueId=61&merchantId=642011&filterOverPriceListings=false&sav=true')
+                                        h5.card-title.mb-3 3KG Gün Kurusu Kayısı
                                     p.card-text.mb-0
-                                        | Some more quick example text to build on the card title and make up the bulk of the card's content.
-                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                        | %100 Malatya'dan 1. Kalite Yeni Mahsül Doğal Jumbo Gün Kurusu Kayısı
+                                // .card-footer.p-4.pt-0.bg-transparent.border-top-0
                                     .d-flex.align-items-end.justify-content-between
                                         .d-flex.align-items-center
                                             img.rounded-circle.me-3(src='https://dummyimage.com/40x40/ced4da/6c757d', alt='...')
@@ -142,7 +147,7 @@ html(lang='en')
                                                 .text-muted April 2, 2023 &middot; 10 min read
 
                     // Call to action
-                    aside.bg-primary.bg-gradient.rounded-3.p-4.p-sm-5.mt-5
+                    // aside.bg-primary.bg-gradient.rounded-3.p-4.p-sm-5.mt-5
                         .d-flex.align-items-center.justify-content-between.flex-column.flex-xl-row.text-center.text-xl-start
                             .mb-4.mb-xl-0
                                 .fs-3.fw-bold.text-white New products, delivered to you.
